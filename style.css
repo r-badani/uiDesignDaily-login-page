@@ -20,6 +20,24 @@ a {
     text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+      flex-direction: column;
+      max-height: 100vh;
+      overflow: auto;
+      border: 5px;
+  }
+
+  form {
+      padding: 10px;
+      border-bottom: thin solid #dce7ff;
+  }
+
+  .form-control {
+      margin: 5px 0;
+    }
+}
+
 .container {
     display: flex;
     border-radius: 3px;
@@ -141,3 +159,4 @@ input:not([type="checkbox"]) {
     line-height: 1.8;
     margin: 5px 0;
 }
+
